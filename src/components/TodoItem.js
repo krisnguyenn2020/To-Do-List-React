@@ -6,7 +6,7 @@ class TodoItem extends Component {
         return (
             <div className="TodoItem">
                 <p>{this.props.title }</p>
-                <p>Do Something</p>
+            
             </div>
         );
     }
