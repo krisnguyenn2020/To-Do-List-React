@@ -9,9 +9,9 @@ class App extends Component {
   constructor() {
     super();
     this.TodoItems = [
-      'Do Homework',
-      'Hang out',
-      'Workout'
+      { title: 'Do Homework'} ,
+      { title: 'Workout'} ,
+      { title: 'Hangout'} ,
     ];
   }
 
@@ -20,7 +20,9 @@ class App extends Component {
     return (
       <div className="App">
         {
-          this.TodoItems.map((item, index) =>  <TodoItem key={index} title = {item} />)
+          this.TodoItems.map((item, index) =>  
+          <TodoItem key={index} item = {item} />
+          )
 
         }
       </div>

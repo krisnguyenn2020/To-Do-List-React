@@ -1,11 +1,12 @@
 import React, { Component } from 'react'
 
 import "./TodoItem.css"
+
 class TodoItem extends Component {
     render() { 
         return (
             <div className="TodoItem">
-                <p>{this.props.title }</p>
+                <p>{this.props.item.title }</p>
             
             </div>
         );
